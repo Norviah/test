@@ -1,3 +1,5 @@
+## [3.2.0](https://github.com/Norviah/test/compare/3.1.0...3.2.0) (2024-10-18)
+
 ## [3.1.0](https://github.com/Norviah/test/compare/3.0.0...3.1.0) (2024-10-18)
 
 - v <code>[fc870de](https://github.com/Norviah/test/commit/fc870de6a1697b8175a5d25b3910713b05f44ae2)</code>
