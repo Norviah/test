@@ -33,7 +33,7 @@ app.whenReady().then(() => {
     optimizer.watchWindowShortcuts(window);
   });
 
-  // initializeTray();
+  initializeTray();
   registerAPI(ipcMain);
 
   windows.main.open();
@@ -57,30 +57,9 @@ app.on('window-all-closed', () => {
 });
 
 import { Logger } from '@norviah/logger';
+import { initializeTray } from './systems/tray';
 
 const logger = new Logger({ write: true, dir: app.getPath('desktop') });
-
-const template: any = [];
-if (process.platform === 'darwin') {
-  // OS X
-  const name = app.getName();
-  template.unshift({
-    label: name,
-    submenu: [
-      {
-        label: 'About ' + name,
-        role: 'about',
-      },
-      {
-        label: 'Quit',
-        accelerator: 'Command+Q',
-        click() {
-          app.quit();
-        },
-      },
-    ],
-  });
-}
 
 // let win: BrowserWindow | null = null;
 
@@ -123,13 +102,7 @@ autoUpdater.on('download-progress', (progressObj) => {
 autoUpdater.on('update-downloaded', () => {
   sendStatusToWindow('Update downloaded');
 });
-app.on('ready', () => {
-  // Create the Menu
-  const menu = Menu.buildFromTemplate(template);
-  Menu.setApplicationMenu(menu);
 
-  // createDefaultWindow();
-});
 app.on('window-all-closed', () => {
   app.quit();
 });
