@@ -1,4 +1,12 @@
-## [3.12.0](https://github.com/Norviah/test/compare/3.11.0...3.12.0) (2024-10-18)
+## [3.13.0](https://github.com/Norviah/test/compare/v3.12.0...3.13.0) (2024-10-18)
+
+- d <code>[df721c4](https://github.com/Norviah/test/commit/df721c4011670c3de2587dc938c3771711fd76cd)</code>
+
+## [v3.12.0](https://github.com/Norviah/test/compare/3.12.0...v3.12.0) (2024-10-18)
+
+## [3.12.0](https://github.com/Norviah/test/compare/v3.11.0...3.12.0) (2024-10-18)
+
+## [v3.11.0](https://github.com/Norviah/test/compare/3.11.0...v3.11.0) (2024-10-18)
 
 ## [3.11.0](https://github.com/Norviah/test/compare/v3.9.0...3.11.0) (2024-10-18)
 
