@@ -51,9 +51,10 @@ app.whenReady().then(() => {
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
+  // if (process.platform !== 'darwin') {
+  //   app.quit();
+  // }
+  console.log('window-all-closed');
 });
 
 import { Logger } from '@norviah/logger';
@@ -131,5 +132,5 @@ app.on('ready', () => {
   // createDefaultWindow();
 });
 app.on('window-all-closed', () => {
-  app.quit();
+  // app.quit();
 });
