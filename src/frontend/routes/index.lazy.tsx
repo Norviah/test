@@ -2,7 +2,7 @@ import { Button } from '@frontend/components/ui/Button';
 import { Input } from '@frontend/components/ui/Input';
 import { Skeleton } from '@frontend/components/ui/Skeleton';
 import { createLazyFileRoute } from '@tanstack/react-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Video } from 'youtube-sr';
 
 export const Route = createLazyFileRoute('/')({
@@ -12,8 +12,17 @@ export const Route = createLazyFileRoute('/')({
 function Index() {
   const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [version, setVersion] = useState('');
 
   const [results, setResults] = useState<Video[]>([]);
+
+  async function versio() {
+    setVersion(await window.api.version());
+  }
+
+  useEffect(() => {
+    versio();
+  }, []);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -32,10 +41,10 @@ function Index() {
 
   return (
     <div className='flex flex-col gap-2'>
+      version : {version}
       <Button variant='outline' onClick={() => setCount((prev) => prev + 1)} className='w-20'>
         Count: {count}
       </Button>
-
       <form className='flex flex-row gap-2' onSubmit={onSubmit}>
         <Input placeholder='Name...' className='w-96' name='name' />
 
@@ -43,7 +52,6 @@ function Index() {
           greet
         </Button>
       </form>
-
       {loading && (
         <div className='flex flex-col gap-2'>
           {Array.from({ length: 4 }).map((_, index) => (
@@ -51,7 +59,6 @@ function Index() {
           ))}
         </div>
       )}
-
       {results.map((result) => {
         return (
           <div className='bg-card p-5 rounded w-full flex flex-row gap-2' key={result.id}>
