@@ -17,6 +17,9 @@ importers:
       '@norviah/bump':
         specifier: ^1.4.1
         version: 1.4.1(@types/node@20.16.11)(typescript@5.6.3)
+      '@norviah/logger':
+        specifier: ^7.0.0
+        version: 7.0.0
       '@radix-ui/react-accordion':
         specifier: ^1.2.1
         version: 1.2.1(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -117,7 +120,7 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       electron-updater:
-        specifier: ^6.1.7
+        specifier: ^6.3.9
         version: 6.3.9
       embla-carousel-react:
         specifier: ^8.3.0
@@ -795,6 +798,9 @@ packages:
     resolution: {integrity: sha512-tlvQPOSwmob908RT4qLcpAWPEZV+/q2OJWucOoJSs/KsSzBxEGtztviX1BvQpRfKMq4jALgs2hNFApTS/R6NyQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
+
+  '@norviah/logger@7.0.0':
+    resolution: {integrity: sha512-nOOOmBHaD5evBnWDCQbDQ50pBcYWuAXl3iThREanc+aT58qh4T/nLje7uDP7IBfAp2a22jCR2v9FBKJvSwnthw==}
 
   '@oclif/core@2.16.0':
     resolution: {integrity: sha512-dL6atBH0zCZl1A1IXCKJgLPrM/wR7K+Wi401E/IvqsK8m2iCHW+0TEOGrans/cuN3oTW+uxIyJFHJ8Im0k4qBw==}
@@ -3372,6 +3378,9 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
+  spacetime@6.16.3:
+    resolution: {integrity: sha512-JQEfj3VHT1gU1IMV5NvhgAP8P+2mDFd84ZCiHN//dp6hRKmuW0IizHissy62lO0nilfFjVhnoSaMC7te+Y5f4A==}
+
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
@@ -3531,6 +3540,11 @@ packages:
   type-fest@4.26.1:
     resolution: {integrity: sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==}
     engines: {node: '>=16'}
+
+  typescript@4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
 
   typescript@5.6.3:
     resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
@@ -4222,6 +4236,13 @@ snapshots:
       - '@types/node'
       - supports-color
       - typescript
+
+  '@norviah/logger@7.0.0':
+    dependencies:
+      app-root-path: 3.1.0
+      chalk: 4.1.2
+      spacetime: 6.16.3
+      typescript: 4.9.5
 
   '@oclif/core@2.16.0(@types/node@20.16.11)(typescript@5.6.3)':
     dependencies:
@@ -6979,6 +7000,8 @@ snapshots:
 
   source-map@0.6.1: {}
 
+  spacetime@6.16.3: {}
+
   sprintf-js@1.0.3: {}
 
   sprintf-js@1.1.3:
@@ -7171,6 +7194,8 @@ snapshots:
   type-fest@0.21.3: {}
 
   type-fest@4.26.1: {}
+
+  typescript@4.9.5: {}
 
   typescript@5.6.3: {}
 

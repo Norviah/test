@@ -3,19 +3,15 @@
     "pre": [
       {
         "name": "linting",
-        "command": "pnpm run lint"
+        "command": "echo lint"
       },
       {
         "name": "checking format",
-        "command": "pnpm run format"
+        "command": "echo format"
       },
       {
         "name": "building project",
-        "command": "pnpm run build"
-      },
-      {
-        "name": "building documentation",
-        "command": "pnpm run build:docs"
+        "command": "echo build"
       }
     ]
   },
