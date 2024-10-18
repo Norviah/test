@@ -1,3 +1,9 @@
+## [3.11.0](https://github.com/Norviah/test/compare/v3.9.0...3.11.0) (2024-10-18)
+
+- d <code>[a50a177](https://github.com/Norviah/test/commit/a50a17722c572ffad8f6cf1c199f05df561e8284)</code>
+
+## [v3.9.0](https://github.com/Norviah/test/compare/3.10.0...v3.9.0) (2024-10-18)
+
 ## [3.10.0](https://github.com/Norviah/test/compare/3.9.0...3.10.0) (2024-10-18)
 
 ## [3.9.0](https://github.com/Norviah/test/compare/v3.8.0...3.9.0) (2024-10-18)
