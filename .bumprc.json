@@ -75,7 +75,7 @@
   "breakingHeader": "⚠ Breaking Changes",
   "includeBody": false,
   "includeNonConventionalCommits": true,
-  "tag": "v{{after}}",
+  "tag": "{{after}}",
   "releaseSubject": "chore(release): {{tag}}",
   "changelogSubject": "docs(changelog): {{tag}}",
   "commitOrder": "asc"
