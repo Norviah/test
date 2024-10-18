@@ -102,5 +102,14 @@
     "type-fest": "^4.26.1",
     "typescript": "^5.5.2",
     "vite": "^5.3.1"
+  },
+    "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "norviah",
+        "repo": "test"
+      }
+    ]
   }
 }
