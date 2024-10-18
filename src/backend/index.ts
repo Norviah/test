@@ -11,11 +11,11 @@ export function getAutoUpdater(): AppUpdater {
   return autoUpdater;
 }
 
-const autoUpdater = getAutoUpdater();
-
 import { registerAPI } from './systems/ipc';
 
 import * as windows from './systems/window';
+
+const { autoUpdater } = electronUpdater;
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -51,10 +51,9 @@ app.whenReady().then(() => {
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
 app.on('window-all-closed', () => {
-  // if (process.platform !== 'darwin') {
-  //   app.quit();
-  // }
-  console.log('window-all-closed');
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
 });
 
 import { Logger } from '@norviah/logger';
@@ -132,5 +131,5 @@ app.on('ready', () => {
   // createDefaultWindow();
 });
 app.on('window-all-closed', () => {
-  // app.quit();
+  app.quit();
 });
