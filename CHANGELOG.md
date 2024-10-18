@@ -1,3 +1,5 @@
+## [3.10.0](https://github.com/Norviah/test/compare/3.9.0...3.10.0) (2024-10-18)
+
 ## [3.9.0](https://github.com/Norviah/test/compare/v3.8.0...3.9.0) (2024-10-18)
 
 - dasd <code>[648e8ea](https://github.com/Norviah/test/commit/648e8eae0c7059317df64bafdcde9c13a0d0dd93)</code>
