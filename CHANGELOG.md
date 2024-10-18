@@ -1,4 +1,12 @@
-## [3.6.0](https://github.com/Norviah/test/compare/3.5.0...3.6.0) (2024-10-18)
+## [3.7.0](https://github.com/Norviah/test/compare/v3.6.0...3.7.0) (2024-10-18)
+
+- hmm <code>[f3a5fef](https://github.com/Norviah/test/commit/f3a5fef08215af9c90d3263500f1a90b2cd10191)</code>
+
+## [v3.6.0](https://github.com/Norviah/test/compare/3.6.0...v3.6.0) (2024-10-18)
+
+## [3.6.0](https://github.com/Norviah/test/compare/v3.5.0...3.6.0) (2024-10-18)
+
+## [v3.5.0](https://github.com/Norviah/test/compare/3.5.0...v3.5.0) (2024-10-18)
 
 ## [3.5.0](https://github.com/Norviah/test/compare/v3.4.0...3.5.0) (2024-10-18)
 
