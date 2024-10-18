@@ -1,3 +1,5 @@
+## [3.6.0](https://github.com/Norviah/test/compare/3.5.0...3.6.0) (2024-10-18)
+
 ## [3.5.0](https://github.com/Norviah/test/compare/v3.4.0...3.5.0) (2024-10-18)
 
 ## [v3.4.0](https://github.com/Norviah/test/compare/3.4.0...v3.4.0) (2024-10-18)
